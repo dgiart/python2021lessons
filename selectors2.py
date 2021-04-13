@@ -43,8 +43,3 @@ def event_loop():
 if __name__ == '__main__':
     to_monitor.append(server_socket)
     event_loop()
-    # print(os.getcwd())
-    # print(os.listdir())
-    # with open ('select1.py') as f:
-    #     print(select([f], [], []))
-    # accept_connection(server_socket)
