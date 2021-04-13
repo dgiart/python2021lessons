@@ -22,6 +22,7 @@ def send_message(client_socket):
         response = f'Hop-Hop {request}'.encode()
         client_socket.send(response)
     else:
+        to_monitor.remove(client_socket)
         client_socket.close()
 
 
@@ -41,5 +42,6 @@ def event_loop():
 
 
 if __name__ == '__main__':
-    to_monitor.append(server_socket)
-    event_loop()
+    print((os.getcwd()))
+    # to_monitor.append(server_socket)
+    # event_loop()
